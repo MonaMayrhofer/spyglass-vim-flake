@@ -58,6 +58,79 @@
             after = ["nvim-lspconfig"];
           };
         };
+
+        lsp = {
+          formatOnSave = true;
+          lspkind.enable = false;
+          lightbulb.enable = true;
+          lspsaga.enable = false;
+          nvimCodeActionMenu.enable = true;
+          trouble.enable = true;
+          lspSignature.enable = true;
+          lsplines.enable = true;
+          nvim-docs-view.enable = true;
+        };
+
+        visuals = {
+          enable = true;
+          nvimWebDevicons.enable = true;
+          scrollBar.enable = true;
+          smoothScroll.enable = true;
+          cellularAutomaton.enable = false;
+          fidget-nvim.enable = true;
+          highlight-undo.enable = true;
+
+          indentBlankline = {
+            enable = true;
+            fillChar = null;
+            eolChar = null;
+            scope = {
+              enabled = true;
+            };
+          };
+
+          cursorline = {
+            enable = true;
+            lineTimeout = 0;
+          };
+        };
+
+        statusline = {
+          lualine = {
+            enable = true;
+            theme = "dracula";
+          };
+        };
+        binds = {
+          whichKey.enable = true;
+          cheatsheet.enable = true;
+        };
+
+        autocomplete = {
+          enable = true;
+          type = "nvim-cmp";
+          mappings = {
+            next = "<C-j>";
+            previous = "<C-k>";
+            close = "<C-h>";
+          };
+        };
+
+        filetree = {
+          nvimTree = {
+            enable = true;
+            mappings = {
+              toggle = "<leader>e";
+            };
+          };
+        };
+
+        telescope = {
+          enable = true;
+          mappings = {
+            findFiles = "<C-p>";
+          };
+        };
       };
     };
 
