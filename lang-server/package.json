@@ -1,0 +1,11 @@
+{
+  "name": "lang-server",
+  "version": "0.0.1",
+  "type": "module",
+  "bin": {
+    "spyglassmc-language-server": "./bin/server.js"
+  },
+  "dependencies": {
+    "@spyglassmc/language-server": "^0.4.2"
+  }
+}
